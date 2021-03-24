@@ -1,3 +1,6 @@
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Say hi!</h1>
+    <ul>
+        <li><a href="/">Главная</a></li>
+        {% for page in flatpages %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
