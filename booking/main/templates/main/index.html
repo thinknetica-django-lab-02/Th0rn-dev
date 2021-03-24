@@ -6,13 +6,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        ul.menu {
+            margin: 0; /* Обнуляем значение отступов */
+            padding: 4px; /* Значение полей */
+        }
+        ul.menu li {
+            display: inline; /* Отображать как строчный элемент */
+            margin-right: 5px; /* Отступ слева */
+            padding: 3px; /* Поля вокруг текста */
+        }
+    </style>
 </head>
 <body>
-    <ul>
+    <ul class="menu">
         <li><a href="/">Главная</a></li>
         {% for page in flatpages %}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
     </ul>
+    <hr>
+    <h3>Главная</h3>
 </body>
 </html>
