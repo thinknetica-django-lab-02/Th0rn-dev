@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Базовый шаблон</title>
+    <style>
+        ul.menu {
+            margin: 0; /* Обнуляем значение отступов */
+            padding: 4px; /* Значение полей */
+        }
+        ul.menu li {
+            display: inline; /* Отображать как строчный элемент */
+            margin-right: 5px; /* Отступ слева */
+            padding: 3px; /* Поля вокруг текста */
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="/">Главная1</a></li>
+        {% for page in flatpages %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+</ul>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
