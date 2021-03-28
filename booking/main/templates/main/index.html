@@ -1,31 +1,9 @@
-{% load flatpages %}
-{% get_flatpages as flatpages %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        ul.menu {
-            margin: 0; /* Обнуляем значение отступов */
-            padding: 4px; /* Значение полей */
-        }
-        ul.menu li {
-            display: inline; /* Отображать как строчный элемент */
-            margin-right: 5px; /* Отступ слева */
-            padding: 3px; /* Поля вокруг текста */
-        }
-    </style>
-</head>
-<body>
-    <ul class="menu">
-        <li><a href="/">Главная</a></li>
-        {% for page in flatpages %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-        {% endfor %}
-    </ul>
-    <hr>
-    <h3>Главная</h3>
-</body>
-</html>
+{% extends "main/base.html" %}
+{% block title %} Главная страница {% endblock %}
+{% block content %}
+    <h1>Главная</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi commodi ducimus esse ex
+        in ipsum itaque minus molestiae non nostrum perspiciatis quaerat quibusdam rem repellendus, sed, temporibus
+        ut vel!
+    </p>
+{% endblock %}
