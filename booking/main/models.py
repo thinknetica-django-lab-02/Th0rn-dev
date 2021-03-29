@@ -66,6 +66,7 @@ class Room(models.Model):
     area = models.DecimalField("Площадь комнаты", blank=True, max_digits=3, decimal_places=1)
     image = models.ImageField(blank=True)
     tag = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
+    rental = models.DecimalField(verbose_name="Аренда за сутки", max_digits=5, decimal_places=1, null=True)
 
     def __str__(self):
         return self.number
