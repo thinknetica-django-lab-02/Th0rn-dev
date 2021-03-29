@@ -58,7 +58,7 @@ class Tag(models.Model):
 
 class Room(models.Model):
     hotel = models.ForeignKey(AccommodationFacility, on_delete=models.CASCADE, default="", verbose_name="Отель")
-    number = models.CharField("Номер комнаты", unique=True, max_length=10)
+    number = models.CharField("Номер комнаты", max_length=10)
     checkin = models.TimeField("Время заезда", auto_now=False, default=datetime.time(12, 00))
     checkout = models.TimeField("Время выселения", auto_now=False, auto_now_add=False, default=datetime.time(10, 00))
     booking = models.BooleanField("Номер забронирован", default=False)
