@@ -2,8 +2,14 @@
 {% block title %} Главная страница {% endblock %}
 {% block content %}
     <h1>Главная</h1>
+    <p>Имя текущего пользователя - {{ user.first_name }}</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi commodi ducimus esse ex
         in ipsum itaque minus molestiae non nostrum perspiciatis quaerat quibusdam rem repellendus, sed, temporibus
         ut vel!
     </p>
+    {% if turn_on_block %}
+        <div class="alert alert-success" role="alert">
+            <p > Turn On</p>
+        </div>
+    {%  endif %}
 {% endblock %}
