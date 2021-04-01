@@ -1,4 +1,6 @@
 {% extends "main/base.html" %}
+{% load current_server_time %}
+{% load own_filter %}
 {% block title %} Главная страница {% endblock %}
 {% block content %}
     <h1>Главная</h1>
@@ -7,6 +9,8 @@
         in ipsum itaque minus molestiae non nostrum perspiciatis quaerat quibusdam rem repellendus, sed, temporibus
         ut vel!
     </p>
+    <p class="text-danger">Текущее время сервера - {% current_server_time "%Y-%m-%d %I:%M %p"%}</p>
+<p class="text-info">Переворачиваем строку: "Привет, мир!". Результат: {{  "Привет, мир!"|string_reverse }}</p>
     {% if turn_on_block %}
         <div class="alert alert-success" role="alert">
             <p > Turn On</p>
