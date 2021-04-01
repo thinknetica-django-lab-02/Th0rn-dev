@@ -42,7 +42,7 @@ class AccommodationFacility(models.Model):
     address = models.CharField("Адрес", max_length=120)
     email = models.EmailField()
     description = models.TextField("Описание", blank=True)
-    image = models.ImageField(blank=True)
+    image = models.ImageField(upload_to="images", blank=True)
     manager = models.ForeignKey(AccommodationManager, on_delete=models.CASCADE, verbose_name="Управляющий")
 
     def __str__(self):

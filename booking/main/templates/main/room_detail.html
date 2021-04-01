@@ -1,0 +1,13 @@
+{% extends "main/base.html" %}
+{% block title %} Номер - {{ room.number }} {% endblock %}
+
+{% block content %}
+<h1>Номер - {{ room.number }}</h1>
+<ul>
+    <li>Отель - {{ room.hotel }}</li>
+    <li>Описание - {{ room.description }}</li>
+    <li>Аренда - {{ room.rental }} руб./сутки</li>
+</ul>
+
+
+{% endblock %}
