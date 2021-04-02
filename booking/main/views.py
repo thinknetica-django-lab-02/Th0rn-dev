@@ -17,6 +17,7 @@ class RoomsList(ListView):
     model = Room
     template_name = "main/rooms_list.html"
     context_object_name = "rooms"
+    paginate_by = 10
 
 
 class RoomDetail(DetailView):
