@@ -31,7 +31,7 @@ class RoomsListView(ListView):
         queryset = super(RoomsListView, self).get_queryset()
         tag = self.request.GET.get("tag")
         if tag is not None:
-            return queryset.filter(tags__tag_name=tag)
+            return queryset.filter(tags__tag_name=tag).order_by("id")
         return queryset
 
 
