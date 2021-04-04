@@ -7,6 +7,7 @@
     <li>Отель - {{ room.hotel }}</li>
     <li>Описание - {{ room.description }}</li>
     <li>Аренда - {{ room.rental }} руб./сутки</li>
+    <li>Дополнительные услуги: {% for tag in room.tags.all %} "{{tag.tag_name}}" {% endfor %}</li>
 </ul>
 
 
