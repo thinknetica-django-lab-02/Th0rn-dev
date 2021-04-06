@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
+THUMBNAIL_DEBUG = True
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'ckeditor',
+    'sorl.thumbnail',
     'main'
 ]
 
@@ -129,3 +132,7 @@ STATIC_URL = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+

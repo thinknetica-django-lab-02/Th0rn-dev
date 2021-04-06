@@ -1,4 +1,5 @@
 {% extends "main/base.html" %}
+{% load sorl_thumbnail %}
 {% block title %} Номер - {{ room.number }} {% endblock %}
 
 {% block content %}
@@ -8,6 +9,13 @@
     <li>Описание - {{ room.description }}</li>
     <li>Аренда - {{ room.rental }} руб./сутки</li>
     <li>Дополнительные услуги: {% for tag in room.tags.all %} "{{tag.tag_name}}" {% endfor %}</li>
+    <li>Фотографии номера:
+        {% thumbnail room.image "100x100" crop="center" as im  %}
+        <a href="{{ room.image.url }}">
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+        </a>
+        {% endthumbnail %}
+    </li>
 </ul>
 
 

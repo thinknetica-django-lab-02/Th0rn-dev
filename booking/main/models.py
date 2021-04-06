@@ -1,7 +1,7 @@
 import datetime
 from django.db import models
-from django.forms import ModelForm
 from django.contrib.auth.models import User
+from sorl.thumbnail import ImageField
 
 
 class AccommodationManager(models.Model):
@@ -11,7 +11,7 @@ class AccommodationManager(models.Model):
     profile = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True, verbose_name="Профиль")
 
     def __str__(self):
-        return self.last_name + " " + self.first_name + " " + self.middle_name
+        return "{} {} {}".format(self.last_name, self.first_name, self.middle_name)
 
 
 class AccommodationFacility(models.Model):
@@ -43,7 +43,7 @@ class AccommodationFacility(models.Model):
     address = models.CharField("Адрес", max_length=120)
     email = models.EmailField()
     description = models.TextField("Описание", blank=True)
-    image = models.ImageField(upload_to="images", blank=True)
+    image = ImageField(upload_to='images/')
     manager = models.ForeignKey(AccommodationManager, on_delete=models.CASCADE, verbose_name="Управляющий")
 
     def __str__(self):
@@ -65,7 +65,7 @@ class Room(models.Model):
     booking = models.BooleanField("Номер забронирован", default=False)
     description = models.TextField("Описание", blank=True)
     area = models.DecimalField("Площадь комнаты", blank=True, max_digits=3, decimal_places=1)
-    image = models.ImageField(blank=True)
+    image = ImageField(upload_to='images/')
     tags = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
     rental = models.DecimalField(verbose_name="Аренда за сутки", max_digits=5, decimal_places=1, null=True)
 
@@ -73,14 +73,11 @@ class Room(models.Model):
         return "{} - номер {}".format(self.hotel.title, self.number)
 
 
-class ProfileForm(ModelForm):
-    class Meta:
-        model = User
-        fields = ['first_name']
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
+    avatar = ImageField(upload_to='avatar/')
 
-
-
-
-
+    def __str__(self):
+        return "Профиль пользователя {}".format(self.user.first_name)
 
 
