@@ -1,7 +1,11 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, UpdateView, CreateView
+from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
 
 from .models import Room, Tag
+from .forms import RoomForm
 
 
 def index(request):
@@ -45,6 +49,26 @@ class RoomDetailView(DetailView):
 class RoomCreateView(CreateView):
     """Create new Room for Accommodation Facility"""
     model = Room
-    fields = '__all__'
+    form_class = RoomForm
     template_name = "main/room_create_form.html"
+    success_url = reverse_lazy('rooms-list')
 
+
+class RoomEditView(UpdateView):
+    """Update room properties"""
+    model = Room
+    form_class = RoomForm
+    template_name = "main/room_update_form.html"
+    success_url = reverse_lazy('rooms-list')
+
+
+class ProfileView(LoginRequiredMixin, UpdateView):
+    """Profile view"""
+    model = User
+    # form_class = ProfileFormset
+    template_name = "main/profile_form.html"
+    success_url = reverse_lazy('profile')
+    login_url = reverse_lazy("index")
+
+    def get_object(self, queryset=None):
+        return self.request.user

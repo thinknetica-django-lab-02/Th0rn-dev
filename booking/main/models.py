@@ -1,7 +1,8 @@
+import datetime
 from django.db import models
 from django.urls import reverse
+from django.forms import ModelForm
 from django.contrib.auth.models import User
-import datetime
 
 
 class AccommodationManager(models.Model):
@@ -72,9 +73,18 @@ class Room(models.Model):
     def __str__(self):
         return "{} - номер {}".format(self.hotel.title, self.number)
 
-    @staticmethod
-    def get_absolute_url():
-        return reverse('rooms-list')
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
+
+    def __str__(self):
+        return "Профиль пользователя {}".format(self.user.first_name)
+
+
+# class ProfileForm(ModelForm):
+#     class Meta:
+#         model = Profile
+#         fields = "__all__"
 
 
 

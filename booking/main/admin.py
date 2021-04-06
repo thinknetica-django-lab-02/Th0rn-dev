@@ -5,7 +5,7 @@ from django.db import models
 
 from ckeditor.widgets import CKEditorWidget
 
-from .models import Room, AccommodationFacility, AccommodationManager, Tag
+from .models import Room, AccommodationFacility, AccommodationManager, Tag, Profile
 
 
 class CustomFlatPageAdmin(FlatPageAdmin):
@@ -35,4 +35,9 @@ class AdminAccommodationManager(admin.ModelAdmin):
 
 @admin.register(Tag)
 class AdminTag(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Profile)
+class AdminProfile(admin.ModelAdmin):
     pass
