@@ -46,20 +46,22 @@ class RoomDetailView(DetailView):
     queryset = Room.objects.all()
 
 
-class RoomCreateView(CreateView):
+class RoomCreateView(LoginRequiredMixin, CreateView):
     """Create new Room for Accommodation Facility"""
     model = Room
     form_class = RoomForm
     template_name = "main/room_create_form.html"
     success_url = reverse_lazy('rooms-list')
+    login_url = reverse_lazy("index")
 
 
-class RoomEditView(UpdateView):
+class RoomEditView(LoginRequiredMixin, UpdateView):
     """Update room properties"""
     model = Room
     form_class = RoomForm
     template_name = "main/room_update_form.html"
     success_url = reverse_lazy('rooms-list')
+    login_url = reverse_lazy("index")
 
 
 class ProfileView(LoginRequiredMixin, UpdateView):
