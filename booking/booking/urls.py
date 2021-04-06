@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.flatpages.views import flatpage
-from main.views import index, RoomsListView, RoomDetailView
+from main.views import index, RoomsListView, RoomDetailView, RoomCreateView
 
 urlpatterns = [
     path('', index, name='index'),
     path('rooms/', RoomsListView.as_view(), name='rooms-list'),
     path('rooms/<int:pk>/', RoomDetailView.as_view(), name='room-detail'),
+    path('rooms/add', RoomCreateView.as_view(), name='room-add'),
     path('about-us/', flatpage, {'url': '/about-us/'}, name='about'),
     path('contact/', flatpage, {'url': '/contact/'}, name='contact'),
     path('admin/', admin.site.urls),

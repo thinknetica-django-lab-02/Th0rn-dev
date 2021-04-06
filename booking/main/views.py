@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
 from .models import Room, Tag
 
@@ -40,3 +40,11 @@ class RoomDetailView(DetailView):
     model = Room
     context_object_name = "room"
     queryset = Room.objects.all()
+
+
+class RoomCreateView(CreateView):
+    """Create new Room for Accommodation Facility"""
+    model = Room
+    fields = '__all__'
+    template_name = "main/room_create_form.html"
+

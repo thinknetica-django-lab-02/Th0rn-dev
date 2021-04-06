@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
 import datetime
 
@@ -70,6 +71,10 @@ class Room(models.Model):
 
     def __str__(self):
         return "{} - номер {}".format(self.hotel.title, self.number)
+
+    @staticmethod
+    def get_absolute_url():
+        return reverse('rooms-list')
 
 
 
