@@ -1,6 +1,5 @@
 import datetime
 from django.db import models
-from django.urls import reverse
 from django.forms import ModelForm
 from django.contrib.auth.models import User
 
@@ -85,11 +84,4 @@ class Profile(models.Model):
 #     class Meta:
 #         model = Profile
 #         fields = "__all__"
-
-
-
-
-
-
-
 
