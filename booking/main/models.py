@@ -73,10 +73,18 @@ class Room(models.Model):
         return "{} - номер {}".format(self.hotel.title, self.number)
 
 
-class ProfileForm(ModelForm):
-    class Meta:
-        model = User
-        fields = ['first_name']
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
+
+    def __str__(self):
+        return "Профиль пользователя {}".format(self.user.first_name)
+
+
+# class ProfileForm(ModelForm):
+#     class Meta:
+#         model = Profile
+#         fields = "__all__"
+
 
 
 

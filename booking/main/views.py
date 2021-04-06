@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView, UpdateView
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
 
 from .models import Room, Tag
-from .forms import ProfileForm
+from .forms import ProfileForm, ProfileFormset
 
 
 def index(request):
@@ -47,7 +48,8 @@ class RoomDetailView(DetailView):
 
 class ProfileView(LoginRequiredMixin, UpdateView):
     """Profile view"""
-    form_class = ProfileForm
+    model = User
+    form_class = ProfileFormset
     template_name = "main/profile_form.html"
     success_url = reverse_lazy('profile')
     login_url = reverse_lazy("index")
