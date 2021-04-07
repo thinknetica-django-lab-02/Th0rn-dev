@@ -75,6 +75,7 @@ class Room(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
+    age = models.IntegerField("Возраст", max_length=3)
     avatar = ImageField(upload_to='avatar/')
 
     def __str__(self):

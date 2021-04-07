@@ -4,7 +4,7 @@ from django.forms.models import inlineformset_factory
 from .models import Profile, Room
 
 
-ProfileFormset = inlineformset_factory(User, Profile, fields=())
+ProfileFormset = inlineformset_factory(User, Profile, fields=('age',))
 
 
 class RoomForm(forms.ModelForm):
