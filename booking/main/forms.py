@@ -4,18 +4,6 @@ from django.forms.models import inlineformset_factory
 from .models import Profile, Room
 
 
-class ProfileForm(forms.ModelForm):
-    class Meta:
-        model = Profile
-        fields = []
-
-
-class UserForm(forms.ModelForm):
-    class Meta:
-        model = User
-        fields = ["first_name", "last_name", "email"]
-
-
 ProfileFormset = inlineformset_factory(User, Profile, fields=())
 
 
