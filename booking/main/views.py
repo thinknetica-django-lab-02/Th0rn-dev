@@ -68,7 +68,7 @@ class ProfileView(LoginRequiredMixin, UpdateView):
     formset_class = ProfileFormset
     template_name = "main/profile_form.html"
     success_url = reverse_lazy('profile')
-    login_url = reverse_lazy("index")
+    login_url = '/admin/login/?next=/accounts/profile/'
     fields = ['first_name', 'last_name', 'email']
 
     def get_object(self, queryset=None):
