@@ -24,7 +24,7 @@ class AdminRoom(admin.ModelAdmin):
 
 
 @admin.register(AccommodationFacility)
-class AdminAccommodationFacilit(admin.ModelAdmin):
+class AdminAccommodationFacility(admin.ModelAdmin):
     pass
 
 
