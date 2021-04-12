@@ -4,6 +4,11 @@
 {% block content %}
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
+    {{ profile_form.management_form }}
+    {% for inline_form in profile_form %}
+        {{ inline_form }}
+    {% endfor %}
+    <br><br>
     <input type="submit" value="Update">
 </form>
 {% endblock %}

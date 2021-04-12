@@ -2,6 +2,7 @@ import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from sorl.thumbnail import ImageField
+from .validators import validate_age
 
 
 class AccommodationManager(models.Model):
@@ -75,7 +76,7 @@ class Room(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
-    age = models.IntegerField("Возраст", max_length=3)
+    birthday = models.DateField(verbose_name="День рождения", validators=[validate_age])
     avatar = ImageField(upload_to='avatar/')
 
     def __str__(self):
