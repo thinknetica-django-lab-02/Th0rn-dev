@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<div class="socialaccount_ballot">
+    {% trans "Войти с помощью:" %}
+    <ul class="socialaccount_providers">
+        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+    </ul>
+
+
+</div>
+{% endif %}
+{% endblock %}
+
