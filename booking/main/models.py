@@ -1,6 +1,8 @@
 import datetime
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
+from django.dispatch import receiver
+from django.db.models.signals import post_save
 from sorl.thumbnail import ImageField
 from .validators import validate_age
 
@@ -83,3 +85,8 @@ class Profile(models.Model):
         return "Профиль пользователя {}".format(self.user.first_name)
 
 
+@receiver(post_save, sender=User)
+def add_new_user_to_default_group(sender, instance, created, **kwargs):
+    if created:
+        common_group = Group.objects.get_or_create(name="common users")
+        instance.groups.add(common_group[0])
