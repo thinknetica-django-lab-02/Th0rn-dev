@@ -107,3 +107,5 @@ class ProfileView(LoginRequiredMixin, UpdateView):
             return self.form_valid_formset(form, profile_form)
         else:
             return self.form_invalid(form)
+
+

@@ -91,6 +91,11 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_LOGOUT_ON_GET = True
+
+ACCOUNT_FORMS = {'signup': 'main.forms.CustomSignupForm'}
+
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
