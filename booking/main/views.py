@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, UpdateView, CreateView
 from django.urls import reverse_lazy, reverse
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
 
@@ -47,22 +47,24 @@ class RoomDetailView(DetailView):
     queryset = Room.objects.all()
 
 
-class RoomCreateView(LoginRequiredMixin, CreateView):
+class RoomCreateView(PermissionRequiredMixin, CreateView):
     """Create new Room for Accommodation Facility"""
     model = Room
     form_class = RoomForm
     template_name = "main/room_create_form.html"
     success_url = reverse_lazy('rooms-list')
     login_url = reverse_lazy("index")
+    permission_required = ['main.add_room']
 
 
-class RoomEditView(LoginRequiredMixin, UpdateView):
+class RoomEditView(PermissionRequiredMixin, UpdateView):
     """Update room properties"""
     model = Room
     form_class = RoomForm
     template_name = "main/room_update_form.html"
     success_url = reverse_lazy('rooms-list')
     login_url = reverse_lazy("index")
+    permission_required = ['main.change_room']
 
 
 class ProfileView(LoginRequiredMixin, UpdateView):
