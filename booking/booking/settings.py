@@ -96,6 +96,10 @@ ACCOUNT_LOGOUT_ON_GET = True
 
 ACCOUNT_FORMS = {'signup': 'main.forms.CustomSignupForm'}
 
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_BACKEND ='django.core.mail.backends.stmp.EmailBackends'
+
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
