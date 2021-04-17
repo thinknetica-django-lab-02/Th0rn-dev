@@ -35,7 +35,6 @@ def send_newsleter(sender, instance, created, **kwargs):
         plain_message = strip_tags(html_message)
         from_email = 'From <from@example.com>'
         to = [Subscriber.receiver.email for Subscriber in Subscriber.objects.all()]
-        print(to)
         send_mail(
             subject,
             plain_message,
