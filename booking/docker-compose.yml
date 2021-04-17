@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  redis:
+    image: "bitnami/redis"
+    command: redis-server --requirepass RPASSWORD
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
