@@ -1,12 +1,8 @@
 import datetime
 from django.db import models
-from django.contrib.auth.models import User, Group
-from django.dispatch import receiver
-from django.db.models.signals import post_save
+from django.contrib.auth.models import User
+from django.shortcuts import reverse
 from sorl.thumbnail import ImageField
-from django.core.mail import send_mail
-from django.template.loader import render_to_string
-from django.utils.html import strip_tags
 
 from .validators import validate_age
 
@@ -75,9 +71,13 @@ class Room(models.Model):
     image = ImageField(upload_to='images/', blank=True)
     tags = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
     rental = models.DecimalField(verbose_name="Аренда за сутки", max_digits=5, decimal_places=1, null=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return "{} - номер {}".format(self.hotel.title, self.number)
+
+    def get_absolute_url(self):
+        return reverse('room-detail', kwargs={'id': self.id})
 
 
 class Profile(models.Model):
@@ -89,20 +89,8 @@ class Profile(models.Model):
         return "Профиль пользователя {}".format(self.user.first_name)
 
 
-@receiver(post_save, sender=User)
-def add_new_user_to_default_group(sender, instance, created, **kwargs):
-    if created:
-        common_group = Group.objects.get_or_create(name="common users")
-        instance.groups.add(common_group[0])
-        subject = 'Регистрация нового пользователя на сайте booking'
-        html_message = render_to_string('main/mail_template.html', {'username': User.username})
-        plain_message = strip_tags(html_message)
-        from_email = 'From <from@example.com>'
-        to = User.email
-        send_mail(
-            subject,
-            plain_message,
-            from_email,
-            [to],
-            html_message=html_message)
+class Subscriber(models.Model):
+    receiver = models.OneToOneField(User, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.receiver.email
