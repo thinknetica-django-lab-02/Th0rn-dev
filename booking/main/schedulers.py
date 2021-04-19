@@ -26,6 +26,6 @@ def send_week_news():
             html_message=html_message)
 
 
-scheduler = BackgroundScheduler()
-scheduler.add_job(send_week_news, 'cron', week="*")
-scheduler.start()
+# scheduler = BackgroundScheduler()
+# scheduler.add_job(send_week_news, 'cron', week="*")
+# scheduler.start()
