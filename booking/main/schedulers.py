@@ -12,7 +12,7 @@ def send_week_news():
     week_ago = datetime.timedelta(deys=7)
     diff = today - week_ago
     rooms = Room.objects.filter(created_gte=diff)
-    if len(rooms) > 0:
+    if rooms:
         subject = 'номера, добавленные за последнюю неделю'
         html_message = render_to_string('main/mail_week_news.html', {'rooms': rooms})
         plain_message = strip_tags(html_message)
