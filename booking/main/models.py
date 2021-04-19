@@ -71,6 +71,7 @@ class Room(models.Model):
     image = ImageField(upload_to='images/', blank=True)
     tags = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
     rental = models.DecimalField(verbose_name="Аренда за сутки", max_digits=5, decimal_places=1, null=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return "{} - номер {}".format(self.hotel.title, self.number)

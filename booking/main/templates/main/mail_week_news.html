@@ -1,0 +1,8 @@
+<h3>За последнюю неделю в базу были добавленны следующие номера</h3>
+{% for room in rooms %}
+<div class="row">
+    <div class="col-lg">Отель {{ room.hotel.title }}, комната № {{ room.number }}, площадь - {{ room.area }}</div>
+    <div class="col-lg">Услуги в номере: {{ room.tags.tag_name }}</div>
+    <div class="col-lg">Описание - <a fref="#">ссылка</a></div>
+</div>
+{% end for %}
