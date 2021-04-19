@@ -18,14 +18,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.flatpages.views import flatpage
-from django.views.decorators.cache import cache_page
-
 from main.views import index, RoomsListView, RoomDetailView, RoomCreateView, RoomEditView, ProfileView
 
 urlpatterns = [
     path('', index, name='index'),
     path('rooms/', RoomsListView.as_view(), name='rooms-list'),
-    path('rooms/<int:pk>/', cache_page(60 * 15)(RoomDetailView.as_view()), name='room-detail'),
+    path('rooms/<int:pk>/', RoomDetailView.as_view(), name='room-detail'),
     path('rooms/<int:pk>/edit/', RoomEditView.as_view(), name='room-edit'),
     path('rooms/add', RoomCreateView.as_view(), name='room-add'),
     path('accounts/', include('allauth.urls')),
