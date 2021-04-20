@@ -94,3 +94,10 @@ class Subscriber(models.Model):
 
     def __str__(self):
         return self.receiver.email
+
+
+class SMSLog(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(verbose_name="Статус", max_length=1)
+    message = models.CharField(verbose_name="Сообщение", max_length=100)
+    response = models.TextField("Ответ")

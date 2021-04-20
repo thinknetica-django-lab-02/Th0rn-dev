@@ -1,11 +1,14 @@
 import datetime
+import random
+from vonage import Client, Sms
 from celery.schedules import crontab
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+from decouple import config
 
-from booking.booking.celery import app
-from .models import Room, Subscriber
+from booking.celery import app
+from .models import Room, Subscriber, SMSLog
 
 
 app.conf.beat_schedule={
@@ -50,3 +53,31 @@ def send_week_news():
             from_email,
             [to],
             html_message=html_message)
+
+
+@app.task(name="send_sms")
+def send_sms_by_vonage():
+    key = config("KEY")
+    secret = config("SECRET")
+    phone = config("PHONE")
+    rnd_num = random.randint(1000, 9999)
+    client = Client(key=key, secret=secret)
+    sms = Sms(client)
+    resp = sms.send_message({
+        "from": "booking test",
+        "to": phone,
+        "text": rnd_num
+    })
+    status = resp["messages"][0]["status"]
+    if status == "0":
+        SMSLog.objects.create(
+            status=status,
+            message=rnd_num,
+            response="message delivered "
+        )
+    else:
+        SMSLog.objects.create(
+            status=status,
+            message=rnd_num,
+            response=resp['messages'][0]['error-text']
+        )

@@ -99,8 +99,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# .env
-.env/
+.env
+booking/booking/.env/
 .venv/
 env/
 venv/
