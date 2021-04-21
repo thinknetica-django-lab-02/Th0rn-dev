@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
 {% load sorl_thumbnail %}
+{% load cache %}
 {% block title %} Номер - {{ room.number }} {% endblock %}
 
 {% block content %}
@@ -16,7 +17,6 @@
         </a>
         {% endthumbnail %}
     </li>
+    <li>Кол-во просмотров: {% cache 60 views %}{{ views }}{% endcache %}</li>
 </ul>
-
-
 {% endblock %}
