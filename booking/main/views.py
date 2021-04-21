@@ -4,6 +4,7 @@ from django.urls import reverse_lazy, reverse
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
+from django.core.cache import cache
 
 from .models import Room, Tag
 from .forms import RoomForm, ProfileFormset, UserForm
@@ -45,6 +46,17 @@ class RoomDetailView(DetailView):
     model = Room
     context_object_name = "room"
     queryset = Room.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super(RoomDetailView, self).get_context_data(**kwargs)
+        room = self.get_object()
+        room_key = "room_{}".format(room.id)
+        room_views = cache.get(room_key, 0)
+        room_views += 1
+        print(room_views)
+        cache.set(room_key, room_views, None)
+        context["views"] = room_views
+        return context
 
 
 class RoomCreateView(PermissionRequiredMixin, CreateView):
