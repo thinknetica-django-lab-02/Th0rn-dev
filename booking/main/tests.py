@@ -31,7 +31,7 @@ class TestViews(TestCase):
             description="Отель Хилтон",
             manager=manager
         )
-        room = Room.objects.create(
+        Room.objects.create(
             hotel=hotel,
             number="101",
             description="Номер в Хилтон",
@@ -88,3 +88,7 @@ class TestViews(TestCase):
             })
         self.assertEqual(resp.status_code, 200)
 
+    @skip('void tets dont delete skip')
+    def test_void(self):
+        """Dont delete skip decorator"""
+        pass

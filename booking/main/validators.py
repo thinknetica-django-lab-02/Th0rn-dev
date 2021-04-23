@@ -9,4 +9,7 @@ def validate_age(value):
     delta = now - birthday
     age_years = int(delta.days / 365)
     if delta.days < 365 * 18:
-        raise ValidationError(_('Ваш возраст %(value)s, меньше чем 18 лет.'), params={'value': age_years})
+        raise ValidationError(
+            _('Ваш возраст %(value)s, меньше чем 18 лет.'),
+            params={'value': age_years}
+        )
