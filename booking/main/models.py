@@ -8,6 +8,9 @@ from .validators import validate_age
 
 
 class AccommodationManager(models.Model):
+    """
+    Model manager of accomodation facility
+    """
     first_name = models.CharField("Имя", max_length=30)
     middle_name = models.CharField("Отчествво", max_length=30)
     last_name = models.CharField("Фамилия", max_length=30)
@@ -27,6 +30,9 @@ class AccommodationManager(models.Model):
 
 
 class AccommodationFacility(models.Model):
+    """
+    Model accomodation facility: hotels, cempings etc
+    """
     RATING_STARS = [
         ("1", "Одна звезда"),
         ("2", "Две звезды"),
@@ -75,6 +81,9 @@ class AccommodationFacility(models.Model):
 
 
 class Tag(models.Model):
+    """
+    A model tag for grouping room by some parametrs
+    """
     tag_name = models.CharField(max_length=30, unique=True)
 
     def __str__(self):
@@ -82,6 +91,9 @@ class Tag(models.Model):
 
 
 class Room(models.Model):
+    """
+    A model room for accommodation facility.
+    """
     hotel = models.ForeignKey(
         AccommodationFacility,
         on_delete=models.CASCADE,
@@ -126,6 +138,10 @@ class Room(models.Model):
 
 
 class Profile(models.Model):
+    """
+    A model Profile extends standarts Django model User, augmenting the
+    attributes without changing the User model (avatar, birth day, etc).
+    """
     user = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
@@ -142,6 +158,9 @@ class Profile(models.Model):
 
 
 class Subscriber(models.Model):
+    """
+    A model Subscriber for creating a mailing list
+    """
     receiver = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -149,6 +168,9 @@ class Subscriber(models.Model):
 
 
 class SMSLog(models.Model):
+    """
+    A model that implements the logging of messages sent through the external API
+    """
     created = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(verbose_name="Статус")
     message = models.CharField(verbose_name="Сообщение", max_length=100)
