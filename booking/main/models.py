@@ -21,7 +21,7 @@ class AccommodationManager(models.Model):
         verbose_name="Профиль"
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "{} {} {}".format(
             self.last_name,
             self.first_name,
@@ -76,7 +76,7 @@ class AccommodationFacility(models.Model):
         verbose_name="Управляющий"
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.title
 
 
@@ -86,7 +86,7 @@ class Tag(models.Model):
     """
     tag_name = models.CharField(max_length=30, unique=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.tag_name
 
 
@@ -130,10 +130,10 @@ class Room(models.Model):
     )
     created = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "{} - номер {}".format(self.hotel.title, self.number)
 
-    def get_absolute_url(self):
+    def get_absolute_url(self) -> str:
         return reverse('room-detail', kwargs={'id': self.id})
 
 
@@ -153,7 +153,7 @@ class Profile(models.Model):
     )
     avatar = ImageField(upload_to='avatar/')
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "Профиль пользователя {}".format(self.user.first_name)
 
 
@@ -163,7 +163,7 @@ class Subscriber(models.Model):
     """
     receiver = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.receiver.email
 
 
