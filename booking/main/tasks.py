@@ -11,7 +11,7 @@ from booking.celery import app
 from .models import Room, Subscriber, SMSLog
 
 
-app.conf.beat_schedule={
+app.conf.beat_schedule = {
     'add-every-week': {
         'task': 'tasks.send_week_news_mail',
         'schedule': crontab(minute=0, hour=10, day_of_week='mon')
@@ -23,7 +23,10 @@ app.conf.beat_schedule={
 def send_newsleter():
     room = Room.objects.last()
     subject = 'Создан новый объект размещения в ' + room.hotel
-    html_message = render_to_string('main/mail_subscribers.html', {'room': room})
+    html_message = render_to_string(
+        'main/mail_subscribers.html',
+        {'room': room}
+    )
     plain_message = strip_tags(html_message)
     from_email = 'From <from@example.com>'
     to = Subscriber.objects.values_list("receiver__email", flat=True)
@@ -43,7 +46,10 @@ def send_week_news():
     rooms = Room.objects.filter(created_gte=diff)
     if rooms:
         subject = 'номера, добавленные за последнюю неделю'
-        html_message = render_to_string('main/mail_week_news.html', {'rooms': rooms})
+        html_message = render_to_string(
+            'main/mail_week_news.html',
+            {'rooms': rooms}
+        )
         plain_message = strip_tags(html_message)
         from_email = 'from <from@example.com>'
         to = Subscriber.objects.values_list("receiver__email", flat=True)

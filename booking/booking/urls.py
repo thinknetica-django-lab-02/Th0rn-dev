@@ -18,9 +18,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.flatpages.views import flatpage
-from django.views.decorators.cache import cache_page
 
-from main.views import index, RoomsListView, RoomDetailView, RoomCreateView, RoomEditView, ProfileView
+from main.views import (index, RoomsListView, RoomDetailView,
+                        RoomCreateView, RoomEditView, ProfileView)
 
 urlpatterns = [
     path('', index, name='index'),

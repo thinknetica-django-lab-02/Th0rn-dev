@@ -1,11 +1,31 @@
 from django.contrib.auth.models import User
 from .main.models import Tag, Room, AccommodationFacility, AccommodationManager
 
-user1 = User.objects.create(username="manager1", email="m1@example.com", password="test1")
-user2 = User.objects.create(username="manager2", email="m2@example.com", password="test2")
+user1 = User.objects.create(
+    username="manager1",
+    email="m1@example.com",
+    password="test1"
+)
 
-m1 = AccommodationManager.objects.create(first_name="Константин", middle_name="Иванович", last_name="Петров", profile=user1)
-m2 = AccommodationManager.objects.create(first_name="Алексей", middle_name="Петрович", last_name="Сидоров", profile=user2)
+user2 = User.objects.create(
+    username="manager2",
+    email="m2@example.com",
+    password="test2"
+)
+
+m1 = AccommodationManager.objects.create(
+    first_name="Константин",
+    middle_name="Иванович",
+    last_name="Петров",
+    profile=user1
+)
+
+m2 = AccommodationManager.objects.create(
+    first_name="Алексей",
+    middle_name="Петрович",
+    last_name="Сидоров",
+    profile=user2
+)
 
 t1 = Tag(tag_name="завтрак в номер")
 t1.save()

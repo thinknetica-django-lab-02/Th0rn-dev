@@ -11,10 +11,19 @@ class AccommodationManager(models.Model):
     first_name = models.CharField("Имя", max_length=30)
     middle_name = models.CharField("Отчествво", max_length=30)
     last_name = models.CharField("Фамилия", max_length=30)
-    profile = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True, verbose_name="Профиль")
+    profile = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        primary_key=True,
+        verbose_name="Профиль"
+    )
 
     def __str__(self):
-        return "{} {} {}".format(self.last_name, self.first_name, self.middle_name)
+        return "{} {} {}".format(
+            self.last_name,
+            self.first_name,
+            self.middle_name
+        )
 
 
 class AccommodationFacility(models.Model):
@@ -41,13 +50,25 @@ class AccommodationFacility(models.Model):
         ("13", "Хостел"),
     ]
     title = models.CharField("Название", max_length=100)
-    num_starts = models.CharField("Рейтинг размещения", max_length=1, choices=RATING_STARS)
-    accommodation_type = models.CharField("Тип размещения", max_length=2, choices=ACCOMMODATION_TYPES)
+    num_starts = models.CharField(
+        "Рейтинг размещения",
+        max_length=1,
+        choices=RATING_STARS
+    )
+    accommodation_type = models.CharField(
+        "Тип размещения",
+        max_length=2,
+        choices=ACCOMMODATION_TYPES
+    )
     address = models.CharField("Адрес", max_length=120)
     email = models.EmailField()
     description = models.TextField("Описание", blank=True)
     image = ImageField(upload_to='images/')
-    manager = models.ForeignKey(AccommodationManager, on_delete=models.CASCADE, verbose_name="Управляющий")
+    manager = models.ForeignKey(
+        AccommodationManager,
+        on_delete=models.CASCADE,
+        verbose_name="Управляющий"
+    )
 
     def __str__(self):
         return self.title
@@ -61,16 +82,40 @@ class Tag(models.Model):
 
 
 class Room(models.Model):
-    hotel = models.ForeignKey(AccommodationFacility, on_delete=models.CASCADE, default="", verbose_name="Отель")
+    hotel = models.ForeignKey(
+        AccommodationFacility,
+        on_delete=models.CASCADE,
+        default="",
+        verbose_name="Отель"
+    )
     number = models.CharField("Номер комнаты", max_length=10)
-    checkin = models.TimeField("Время заезда", auto_now=False, default=datetime.time(12, 00))
-    checkout = models.TimeField("Время выселения", auto_now=False, auto_now_add=False, default=datetime.time(10, 00))
+    checkin = models.TimeField(
+        "Время заезда",
+        auto_now=False,
+        default=datetime.time(12, 00)
+    )
+    checkout = models.TimeField(
+        "Время выселения",
+        auto_now=False,
+        auto_now_add=False,
+        default=datetime.time(10, 00)
+    )
     booking = models.BooleanField("Номер забронирован", default=False)
     description = models.TextField("Описание", blank=True)
-    area = models.DecimalField("Площадь комнаты", blank=True, max_digits=3, decimal_places=1)
+    area = models.DecimalField(
+        "Площадь комнаты",
+        blank=True,
+        max_digits=3,
+        decimal_places=1
+    )
     image = ImageField(upload_to='images/', blank=True)
     tags = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
-    rental = models.DecimalField(verbose_name="Аренда за сутки", max_digits=5, decimal_places=1, null=True)
+    rental = models.DecimalField(
+        verbose_name="Аренда за сутки",
+        max_digits=5,
+        decimal_places=1,
+        null=True
+    )
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -81,8 +126,15 @@ class Room(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=False)
-    birthday = models.DateField(verbose_name="День рождения", validators=[validate_age])
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        primary_key=False
+    )
+    birthday = models.DateField(
+        verbose_name="День рождения",
+        validators=[validate_age]
+    )
     avatar = ImageField(upload_to='avatar/')
 
     def __str__(self):
@@ -98,6 +150,6 @@ class Subscriber(models.Model):
 
 class SMSLog(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(verbose_name="Статус", max_length=1)
+    status = models.IntegerField(verbose_name="Статус")
     message = models.CharField(verbose_name="Сообщение", max_length=100)
     response = models.TextField("Ответ")

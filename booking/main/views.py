@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, UpdateView, CreateView
-from django.urls import reverse_lazy, reverse
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.urls import reverse_lazy
+from django.contrib.auth.mixins import (LoginRequiredMixin,
+                                        PermissionRequiredMixin)
 from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
 from django.core.cache import cache
@@ -92,7 +93,9 @@ class ProfileView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         """Добавление в контекст дополнительной формы"""
         context = super().get_context_data(**kwargs)
-        context['profile_form'] = ProfileFormset(instance=self.get_object(kwargs['request']))
+        context['profile_form'] = ProfileFormset(
+            instance=self.get_object(kwargs['request'])
+        )
         return context
 
     def get(self, request, *args, **kwargs):
@@ -115,10 +118,12 @@ class ProfileView(LoginRequiredMixin, UpdateView):
     def post(self, request, *args, **kwargs):
         self.object = self.get_object(request)
         form = self.get_form()
-        profile_form = ProfileFormset(self.request.POST, self.request.FILES, instance=self.object)
+        profile_form = ProfileFormset(
+            self.request.POST,
+            self.request.FILES,
+            instance=self.object
+        )
         if form.is_valid():
             return self.form_valid_formset(form, profile_form)
         else:
             return self.form_invalid(form)
-
-
