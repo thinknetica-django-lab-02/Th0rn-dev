@@ -1,19 +1,18 @@
+from django.urls import reverse_lazy
 from django.test import TestCase, Client
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group, Permission
 from unittest import skip
 
 from .models import Room, AccommodationManager, AccommodationFacility
-
-client = Client()
 
 
 class TestViews(TestCase):
 
     def setUp(self):
         # создать отель, менегера, комнату
-        user = User.objects.create(
+        user = User.objects.create_user(
             username="manager",
-            email="m1@example.com",
+            email="manager@example.com",
             password="test"
         )
         manager = AccommodationManager.objects.create(
@@ -31,7 +30,7 @@ class TestViews(TestCase):
             description="Отель Хилтон",
             manager=manager
         )
-        room = Room.objects.create(
+        Room.objects.create(
             hotel=hotel,
             number="101",
             description="Номер в Хилтон",
@@ -39,52 +38,55 @@ class TestViews(TestCase):
             rental=1200
         )
 
+        editors_grp, _ = Group.objects.get_or_create(name="editors")
+        change_room = Permission.objects.get(name="Can change room")
+        create_room = Permission.objects.get(name="Can add room")
+        editors_grp.permissions.add(change_room)
+        editors_grp.permissions.add(create_room)
+        editors_grp.user_set.add(user)
+
+        self.client = Client()
+        self.client.login(
+            username="manager",
+            password="test"
+        )
+
     def test_index(self):
         """Test main page view"""
-        response = self.client.get('/')
+        url = reverse_lazy("index")
+        response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
 
     def test_rooms_list(self):
         """Test room list page view"""
-        response = self.client.get('/rooms/')
+        url = reverse_lazy("rooms-list")
+        response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
 
     def test_room_detail(self):
         """Test room detail page view for saved room"""
         room = Room.objects.first()
-        response = self.client.get("/rooms/{}/".format(room.id))
+        url = reverse_lazy("room-detail", kwargs={"pk": room.id})
+        response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
 
     # @skip('skip test room create')
     def test_room_create(self):
         """Test room create view"""
-        resp = client.post(
-            "/accounts/login/?next=/room/add/",
-            {
-                "username": "manager",
-                "password": "test"
-            })
+        url = reverse_lazy("room-add")
+        resp = self.client.get(url)
         self.assertEqual(resp.status_code, 200)
 
     # @skip('skip test room edit')
     def test_room_edit(self):
         """Test room edit view, require authorization"""
         room = Room.objects.first()
-        resp = client.post(
-            "/accounts/login/?next=/rooms/{}/edit/".format(room.id),
-            {
-                "username": "manager",
-                "password": "test"
-            })
+        url = reverse_lazy("room-edit", kwargs={"pk": room.id})
+        resp = self.client.get(url)
         self.assertEqual(resp.status_code, 200)
 
     def test_profile(self):
         """Test accounts profile view"""
-        resp = client.post(
-            "/accounts/login/?next=/accounts/profile/",
-            {
-                "username": "manager",
-                "password": "test"
-            })
+        url = reverse_lazy("profile")
+        resp = self.client.get(url)
         self.assertEqual(resp.status_code, 200)
-
