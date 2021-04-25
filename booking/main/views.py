@@ -1,3 +1,4 @@
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, UpdateView, CreateView
 from django.urls import reverse_lazy
@@ -11,7 +12,7 @@ from .models import Room, Tag
 from .forms import RoomForm, ProfileFormset, UserForm
 
 
-def index(request):
+def index(request: HttpRequest) -> HttpResponse:
     turn_on_block = True
     context = {
         "turn_on_block": turn_on_block,
