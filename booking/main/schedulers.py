@@ -1,5 +1,4 @@
 import datetime
-from apscheduler.schedulers.background import BackgroundScheduler
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
@@ -14,10 +13,14 @@ def send_week_news():
     rooms = Room.objects.filter(created_gte=diff)
     if rooms:
         subject = 'номера, добавленные за последнюю неделю'
-        html_message = render_to_string('main/mail_week_news.html', {'rooms': rooms})
+        html_message = render_to_string(
+            'main/mail_week_news.html',
+            {'rooms': rooms}
+        )
         plain_message = strip_tags(html_message)
         from_email = 'from <from@example.com>'
-        to = [subscriber.receiver.email for subscriber in Subscriber.objects.all()]
+        subscribers = Subscriber.objects.all()
+        to = [subscriber.receiver.email for subscriber in subscribers]
         send_mail(
             subject,
             plain_message,

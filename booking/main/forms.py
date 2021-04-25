@@ -20,7 +20,14 @@ class ProfileForm(ModelForm):
         fields = ('birthday', 'user')
 
 
-ProfileFormset = inlineformset_factory(User, Profile, fields=('birthday',), can_delete=False, extra=0, min_num=1)
+ProfileFormset = inlineformset_factory(
+    User,
+    Profile,
+    fields=('birthday',),
+    can_delete=False,
+    extra=0,
+    min_num=1
+)
 
 
 class RoomForm(forms.ModelForm):

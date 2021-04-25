@@ -90,3 +90,8 @@ class TestViews(TestCase):
         url = reverse_lazy("profile")
         resp = self.client.get(url)
         self.assertEqual(resp.status_code, 200)
+
+    @skip('void tets dont delete skip')
+    def test_void(self):
+        """Dont delete skip decorator"""
+        pass
