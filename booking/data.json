@@ -1,0 +1,2661 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2021-04-05T20:14:42.002Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2021-04-06T05:42:31.032Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "бесплатный wifi",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2021-04-06T05:42:47.539Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "завтрак в номер",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2021-04-06T05:44:04.768Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "А А А",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2021-04-06T05:44:10.932Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Hilton",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2021-04-06T06:54:21.534Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Redison",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2021-04-06T07:55:22.195Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Redison - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2021-04-06T07:59:53.294Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Redison - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2021-04-06T08:04:50.566Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2021-04-06T08:17:34.306Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Redison - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2021-04-06T08:59:11.225Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2021-04-06T09:15:10.754Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2021-04-06T09:15:16.308Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Redison - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2021-04-06T09:15:25.178Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2021-04-06T09:23:29.315Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2021-04-06T09:24:06.477Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2021-04-06T09:24:13.501Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2021-04-06T09:25:00.963Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2021-04-06T09:57:33.944Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2021-04-06T09:58:24.794Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2021-04-06T10:06:14.496Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2021-04-06T10:06:41.696Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2021-04-06T10:06:50.814Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2021-04-06T10:18:57.793Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2021-04-06T10:42:09.560Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2021-04-06T10:51:02.591Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Hilton - номер 101",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2021-04-11T09:40:51.869Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2021-04-11T11:22:39.538Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2021-04-11T11:22:50.755Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2021-04-11T15:00:49.835Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2021-04-11T15:01:00.075Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2021-04-11T15:01:08.087Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2021-04-11T15:03:49.834Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Профиль пользователя Nykolay",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2021-04-11T17:47:13.181Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "google",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2021-04-11T17:48:19.748Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "google",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Key\", \"Sites\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2021-04-13T10:43:34.554Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "127.0.0.1:8000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2021-04-13T10:45:56.362Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "google",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Client id\", \"Secret key\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2021-04-13T11:51:24.661Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "th0rn",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2021-04-13T11:55:11.099Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "Профиль пользователя kolun4ik09",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2021-04-14T18:41:39.713Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "editors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2021-04-14T18:46:41.623Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "2",
+      "object_repr": "common users",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2021-04-14T19:26:37.845Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "3",
+      "object_repr": "managers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2021-04-14T19:40:41.208Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "12",
+      "object_repr": "man1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2021-04-16T19:22:44.495Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "12",
+      "object_repr": "Hilton - номер 111111",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2021-04-16T19:31:39.887Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "13",
+      "object_repr": "Hilton - номер 22222",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2021-04-16T21:00:39.998Z",
+      "user": 1,
+      "content_type": 20,
+      "object_id": "1",
+      "object_repr": "Subscriber object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2021-04-16T21:01:02.112Z",
+      "user": 1,
+      "content_type": 20,
+      "object_id": "2",
+      "object_repr": "Subscriber object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2021-04-16T21:05:03.791Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "16",
+      "object_repr": "Hilton - номер 555",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2021-04-16T21:16:50.507Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "17",
+      "object_repr": "Hilton - номер 99",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2021-04-17T18:28:14.920Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "231",
+      "object_repr": "<Task: f278412a-eb4c-4fae-96b4-1b24565eaf5c (FAILURE)>",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2021-04-18T10:46:54.998Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "20",
+      "object_repr": "Hilton - номер 4546",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2021-04-18T17:53:44.495Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "21",
+      "object_repr": "Hilton - номер 34678",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2021-04-25T16:40:37.276Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "11",
+      "object_repr": "234",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2021-04-25T16:41:10.880Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "aaa",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2021-04-25T17:20:19.830Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "editors",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add site",
+      "content_type": 7,
+      "codename": "add_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change site",
+      "content_type": 7,
+      "codename": "change_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete site",
+      "content_type": 7,
+      "codename": "delete_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view site",
+      "content_type": 7,
+      "codename": "view_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add flat page",
+      "content_type": 8,
+      "codename": "add_flatpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change flat page",
+      "content_type": 8,
+      "codename": "change_flatpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete flat page",
+      "content_type": 8,
+      "codename": "delete_flatpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view flat page",
+      "content_type": 8,
+      "codename": "view_flatpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add accommodation facility",
+      "content_type": 9,
+      "codename": "add_accommodationfacility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change accommodation facility",
+      "content_type": 9,
+      "codename": "change_accommodationfacility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete accommodation facility",
+      "content_type": 9,
+      "codename": "delete_accommodationfacility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view accommodation facility",
+      "content_type": 9,
+      "codename": "view_accommodationfacility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add accommodation manager",
+      "content_type": 10,
+      "codename": "add_accommodationmanager"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change accommodation manager",
+      "content_type": 10,
+      "codename": "change_accommodationmanager"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete accommodation manager",
+      "content_type": 10,
+      "codename": "delete_accommodationmanager"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view accommodation manager",
+      "content_type": 10,
+      "codename": "view_accommodationmanager"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add tag",
+      "content_type": 11,
+      "codename": "add_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change tag",
+      "content_type": 11,
+      "codename": "change_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete tag",
+      "content_type": 11,
+      "codename": "delete_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view tag",
+      "content_type": 11,
+      "codename": "view_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add room",
+      "content_type": 12,
+      "codename": "add_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change room",
+      "content_type": 12,
+      "codename": "change_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete room",
+      "content_type": 12,
+      "codename": "delete_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view room",
+      "content_type": 12,
+      "codename": "view_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add profile",
+      "content_type": 13,
+      "codename": "add_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change profile",
+      "content_type": 13,
+      "codename": "change_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete profile",
+      "content_type": 13,
+      "codename": "delete_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view profile",
+      "content_type": 13,
+      "codename": "view_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add kv store",
+      "content_type": 14,
+      "codename": "add_kvstore"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change kv store",
+      "content_type": 14,
+      "codename": "change_kvstore"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete kv store",
+      "content_type": 14,
+      "codename": "delete_kvstore"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view kv store",
+      "content_type": 14,
+      "codename": "view_kvstore"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add email address",
+      "content_type": 15,
+      "codename": "add_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change email address",
+      "content_type": 15,
+      "codename": "change_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete email address",
+      "content_type": 15,
+      "codename": "delete_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view email address",
+      "content_type": 15,
+      "codename": "view_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add email confirmation",
+      "content_type": 16,
+      "codename": "add_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change email confirmation",
+      "content_type": 16,
+      "codename": "change_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete email confirmation",
+      "content_type": 16,
+      "codename": "delete_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view email confirmation",
+      "content_type": 16,
+      "codename": "view_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add social account",
+      "content_type": 17,
+      "codename": "add_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change social account",
+      "content_type": 17,
+      "codename": "change_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete social account",
+      "content_type": 17,
+      "codename": "delete_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view social account",
+      "content_type": 17,
+      "codename": "view_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add social application",
+      "content_type": 18,
+      "codename": "add_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change social application",
+      "content_type": 18,
+      "codename": "change_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete social application",
+      "content_type": 18,
+      "codename": "delete_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view social application",
+      "content_type": 18,
+      "codename": "view_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add social application token",
+      "content_type": 19,
+      "codename": "add_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change social application token",
+      "content_type": 19,
+      "codename": "change_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete social application token",
+      "content_type": 19,
+      "codename": "delete_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view social application token",
+      "content_type": 19,
+      "codename": "view_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add subscriber",
+      "content_type": 20,
+      "codename": "add_subscriber"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change subscriber",
+      "content_type": 20,
+      "codename": "change_subscriber"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete subscriber",
+      "content_type": 20,
+      "codename": "delete_subscriber"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view subscriber",
+      "content_type": 20,
+      "codename": "view_subscriber"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add task result",
+      "content_type": 21,
+      "codename": "add_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change task result",
+      "content_type": 21,
+      "codename": "change_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete task result",
+      "content_type": 21,
+      "codename": "delete_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view task result",
+      "content_type": 21,
+      "codename": "view_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add chord counter",
+      "content_type": 22,
+      "codename": "add_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change chord counter",
+      "content_type": 22,
+      "codename": "change_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete chord counter",
+      "content_type": 22,
+      "codename": "delete_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view chord counter",
+      "content_type": 22,
+      "codename": "view_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add sms log",
+      "content_type": 23,
+      "codename": "add_smslog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change sms log",
+      "content_type": 23,
+      "codename": "change_smslog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete sms log",
+      "content_type": 23,
+      "codename": "delete_smslog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view sms log",
+      "content_type": 23,
+      "codename": "view_smslog"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": { "name": "editors", "permissions": [45, 46] }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": { "name": "common users", "permissions": [] }
+  },
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": { "name": "managers", "permissions": [45, 46] }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$P5LQlnffMhA0$ZkG12vawYJtdkcu+FHLPMwmtmA+sMZrA2BXT7JVP4mo=",
+      "last_login": "2021-04-25T17:19:35.034Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Nykolay",
+      "last_name": "Anohin19",
+      "email": "11_ka@rambler.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-04-05T20:13:30.575Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": { "app_label": "admin", "model": "logentry" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": { "app_label": "auth", "model": "permission" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": { "app_label": "auth", "model": "group" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": { "app_label": "auth", "model": "user" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": { "app_label": "contenttypes", "model": "contenttype" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": { "app_label": "sessions", "model": "session" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": { "app_label": "sites", "model": "site" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": { "app_label": "flatpages", "model": "flatpage" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": { "app_label": "main", "model": "accommodationfacility" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": { "app_label": "main", "model": "accommodationmanager" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": { "app_label": "main", "model": "tag" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": { "app_label": "main", "model": "room" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": { "app_label": "main", "model": "profile" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": { "app_label": "thumbnail", "model": "kvstore" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": { "app_label": "account", "model": "emailaddress" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": { "app_label": "account", "model": "emailconfirmation" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": { "app_label": "socialaccount", "model": "socialaccount" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": { "app_label": "socialaccount", "model": "socialapp" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": { "app_label": "socialaccount", "model": "socialtoken" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": { "app_label": "main", "model": "subscriber" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": { "app_label": "django_celery_results", "model": "taskresult" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": { "app_label": "django_celery_results", "model": "chordcounter" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": { "app_label": "main", "model": "smslog" }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": { "domain": "127.0.0.1:8000", "name": "127.0.0.1:8000" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||0267574c844566334bf446594ac7789d",
+    "fields": {
+      "value": "{\"name\": \"cache/9e/ff/9eff1f9e7f3cd5dce6b4761a8d52d1a3.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||038d048154b532da2befeb4f2584f9b8",
+    "fields": {
+      "value": "{\"name\": \"cache/9a/1a/9a1a4b455c04ee257df443b6cffdbf57.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||1d53bdba0fbc1fdd4cce852ee973a646",
+    "fields": {
+      "value": "{\"name\": \"cat_dza8jmT.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||28538acfa34d4bafa16eb486309c1862",
+    "fields": {
+      "value": "{\"name\": \"cat_xlOaheT.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||415718ccecdba8ff6d3212703af94422",
+    "fields": {
+      "value": "{\"name\": \"avatar/cat.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||5514b177da4e0de9eeb19d3896d02727",
+    "fields": {
+      "value": "{\"name\": \"cache/7d/f5/7df5b91ef8a68548147da992c9d67c47.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||64ad5439f7fed52c21c015aee53c908c",
+    "fields": {
+      "value": "{\"name\": \"images/cat.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||6ef1680169cb8f61f9bd33afbbc9c46a",
+    "fields": {
+      "value": "{\"name\": \"cache/4d/9f/4d9f2b9b9f122cbde25c54ee0dbdd3bb.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||6f568147d1ba63a67d9c2bb44e549451",
+    "fields": {
+      "value": "{\"name\": \"cache/2b/e1/2be17462c534f46123d8346668ab19c2.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||7b54f08135355d19925da6844b55d910",
+    "fields": {
+      "value": "{\"name\": \"cache/b6/b0/b6b0a51af86917d811e09fea80cadc6f.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [40, 40]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||91931487984e51394c43c4581a70758d",
+    "fields": {
+      "value": "{\"name\": \"hotel_room_NkB1Fab.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [250, 171]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||97c65f4192b440e0b8d5de608119bb55",
+    "fields": {
+      "value": "{\"name\": \"cache/fb/fc/fbfc766e24c7bd1afc70fa0f5afe3567.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [40, 40]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||9f93fd8eb964e4572c8e434a9e9a6bd2",
+    "fields": {
+      "value": "{\"name\": \"avatar/ava_3I2wR2J.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [288, 305]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||a8d762532c7fc61af47860b4d68f199a",
+    "fields": {
+      "value": "{\"name\": \"cache/7e/7e/7e7ec85b2967c9f22dc699667e175912.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||abf9a9dd75f96635662e1c755a2ef76c",
+    "fields": {
+      "value": "{\"name\": \"cache/12/48/124870b160a07d41c2fb11c41aa01eba.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [50, 50]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||b077120936120b3c810b8ac4ea451699",
+    "fields": {
+      "value": "{\"name\": \"cache/b7/d7/b7d75e44044a7eacfbad7a32fc553548.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [100, 100]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||b9540bf70235d91774edbca0b2f73210",
+    "fields": {
+      "value": "{\"name\": \"cat.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||bf91f6d751734b85569cff1e2ef41d7c",
+    "fields": {
+      "value": "{\"name\": \"cache/6a/92/6a926774ed12445c685080a518107e66.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [50, 50]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||c5b094f083addadea2b3e4f3419a98aa",
+    "fields": {
+      "value": "{\"name\": \"avatar/ava.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [288, 305]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||c8382b37b800f16810c268932cd87aaf",
+    "fields": {
+      "value": "{\"name\": \"avatar/ava_YDoOgOR.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [288, 305]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||eedbd211cb46ace4e8f54b9e45cbe7e1",
+    "fields": {
+      "value": "{\"name\": \"cat_WotUMyv.jpeg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [796, 1080]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||image||ef57722d843e131b1b61b068bc0a0fe8",
+    "fields": {
+      "value": "{\"name\": \"cache/b6/e4/b6e41bd960729f9180f6c5060652b280.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [40, 40]}"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||1d53bdba0fbc1fdd4cce852ee973a646",
+    "fields": { "value": "[\"6f568147d1ba63a67d9c2bb44e549451\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||28538acfa34d4bafa16eb486309c1862",
+    "fields": { "value": "[\"b077120936120b3c810b8ac4ea451699\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||415718ccecdba8ff6d3212703af94422",
+    "fields": {
+      "value": "[\"abf9a9dd75f96635662e1c755a2ef76c\", \"5514b177da4e0de9eeb19d3896d02727\"]"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||64ad5439f7fed52c21c015aee53c908c",
+    "fields": { "value": "[\"6ef1680169cb8f61f9bd33afbbc9c46a\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||91931487984e51394c43c4581a70758d",
+    "fields": { "value": "[\"a8d762532c7fc61af47860b4d68f199a\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||9f93fd8eb964e4572c8e434a9e9a6bd2",
+    "fields": { "value": "[\"7b54f08135355d19925da6844b55d910\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||b9540bf70235d91774edbca0b2f73210",
+    "fields": { "value": "[\"0267574c844566334bf446594ac7789d\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||c5b094f083addadea2b3e4f3419a98aa",
+    "fields": {
+      "value": "[\"ef57722d843e131b1b61b068bc0a0fe8\", \"bf91f6d751734b85569cff1e2ef41d7c\"]"
+    }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||c8382b37b800f16810c268932cd87aaf",
+    "fields": { "value": "[\"97c65f4192b440e0b8d5de608119bb55\"]" }
+  },
+  {
+    "model": "thumbnail.kvstore",
+    "pk": "sorl-thumbnail||thumbnails||eedbd211cb46ace4e8f54b9e45cbe7e1",
+    "fields": { "value": "[\"038d048154b532da2befeb4f2584f9b8\"]" }
+  },
+  {
+    "model": "main.accommodationmanager",
+    "pk": 1,
+    "fields": { "first_name": "А", "middle_name": "А", "last_name": "А" }
+  },
+  {
+    "model": "main.accommodationfacility",
+    "pk": 1,
+    "fields": {
+      "title": "Hilton",
+      "num_starts": "5",
+      "accommodation_type": "6",
+      "address": "Мск",
+      "email": "1@mail.ru",
+      "description": "Тест",
+      "image": "",
+      "manager": 1
+    }
+  },
+  {
+    "model": "main.accommodationfacility",
+    "pk": 2,
+    "fields": {
+      "title": "Redison",
+      "num_starts": "5",
+      "accommodation_type": "6",
+      "address": "Мск",
+      "email": "2@mail.ru",
+      "description": "Тест",
+      "image": "",
+      "manager": 1
+    }
+  },
+  { "model": "main.tag", "pk": 1, "fields": { "tag_name": "бесплатный wifi" } },
+  { "model": "main.tag", "pk": 2, "fields": { "tag_name": "завтрак в номер" } },
+  {
+    "model": "main.room",
+    "pk": 1,
+    "fields": {
+      "hotel": 1,
+      "number": "101",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "Тест 1eeer",
+      "area": "40.6",
+      "image": "images/cat.jpeg",
+      "rental": "1000.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1, 2]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 2,
+    "fields": {
+      "hotel": 1,
+      "number": "101",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "Тест",
+      "area": "40.6",
+      "image": "",
+      "rental": "1000.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 3,
+    "fields": {
+      "hotel": 1,
+      "number": "202",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "45.0",
+      "image": "",
+      "rental": "1200.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 4,
+    "fields": {
+      "hotel": 1,
+      "number": "301",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "29.6",
+      "image": "",
+      "rental": "1200.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 5,
+    "fields": {
+      "hotel": 1,
+      "number": "402",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "34.6",
+      "image": "",
+      "rental": "1199.6",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 6,
+    "fields": {
+      "hotel": 1,
+      "number": "402",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "34.6",
+      "image": "",
+      "rental": "1199.6",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 7,
+    "fields": {
+      "hotel": 2,
+      "number": "101",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "Номер в Редисон",
+      "area": "29.6",
+      "image": "",
+      "rental": "1200.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1, 2]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 8,
+    "fields": {
+      "hotel": 1,
+      "number": "3457",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "edit managers gg",
+      "area": "45.0",
+      "image": "",
+      "rental": "1200.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 9,
+    "fields": {
+      "hotel": 1,
+      "number": "111",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "q",
+      "area": "11.8",
+      "image": "",
+      "rental": "1000.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [2]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 10,
+    "fields": {
+      "hotel": 1,
+      "number": "1111",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "rr",
+      "area": "21.8",
+      "image": "",
+      "rental": "1000.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [1]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 11,
+    "fields": {
+      "hotel": 1,
+      "number": "11111",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "11",
+      "area": "10.7",
+      "image": "",
+      "rental": "111.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 12,
+    "fields": {
+      "hotel": 1,
+      "number": "111111",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "11",
+      "area": "11.0",
+      "image": "",
+      "rental": "111.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": [2]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 13,
+    "fields": {
+      "hotel": 1,
+      "number": "22222",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "222",
+      "area": "21.9",
+      "image": "",
+      "rental": "2222.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 14,
+    "fields": {
+      "hotel": 1,
+      "number": "3333",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "32.7",
+      "image": "",
+      "rental": "33.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 15,
+    "fields": {
+      "hotel": 1,
+      "number": "4444",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "44.0",
+      "image": "",
+      "rental": "4444.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 16,
+    "fields": {
+      "hotel": 1,
+      "number": "555",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "55",
+      "area": "54.9",
+      "image": "",
+      "rental": "555.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 17,
+    "fields": {
+      "hotel": 1,
+      "number": "99",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "99",
+      "area": "99.0",
+      "image": "",
+      "rental": "99.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 18,
+    "fields": {
+      "hotel": 1,
+      "number": "333333",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "",
+      "area": "32.6",
+      "image": "",
+      "rental": "33.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 19,
+    "fields": {
+      "hotel": 1,
+      "number": "454",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "54",
+      "area": "5.0",
+      "image": "",
+      "rental": "555.0",
+      "created": "2021-04-17T10:49:35.342Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 20,
+    "fields": {
+      "hotel": 1,
+      "number": "4546",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "er",
+      "area": "45.0",
+      "image": "",
+      "rental": "45.0",
+      "created": "2021-04-18T10:46:54.968Z",
+      "tags": [2]
+    }
+  },
+  {
+    "model": "main.room",
+    "pk": 21,
+    "fields": {
+      "hotel": 1,
+      "number": "34678",
+      "checkin": "12:00:00",
+      "checkout": "10:00:00",
+      "booking": false,
+      "description": "88",
+      "area": "34.0",
+      "image": "",
+      "rental": "88.0",
+      "created": "2021-04-18T17:53:44.471Z",
+      "tags": []
+    }
+  },
+  {
+    "model": "main.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "birthday": "1970-01-01",
+      "avatar": "avatar/ava_YDoOgOR.png"
+    }
+  },
+  { "model": "main.subscriber", "pk": 1, "fields": { "receiver": 1 } },
+
+  {
+    "model": "main.smslog",
+    "pk": 1,
+    "fields": {
+      "created": "2021-04-18T17:57:55.697Z",
+      "status": 2,
+      "message": "4444",
+      "response": "message delivered "
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 1,
+    "fields": {
+      "task_id": "be149431-bfd8-47b4-a436-851770696e78",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.174Z",
+      "date_done": "2021-04-17T18:22:58.174Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 2,
+    "fields": {
+      "task_id": "7b5f4161-2af4-44de-8fec-8318c7386d2f",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.182Z",
+      "date_done": "2021-04-17T18:22:58.182Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 3,
+    "fields": {
+      "task_id": "ad3e17a8-b52f-49ca-a4ff-5498c17f3861",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.189Z",
+      "date_done": "2021-04-17T18:22:58.189Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 4,
+    "fields": {
+      "task_id": "ddcacc6b-d2ec-488d-a506-11eb7d99c9bf",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.200Z",
+      "date_done": "2021-04-17T18:22:58.200Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 5,
+    "fields": {
+      "task_id": "fbb6ae5e-7959-4ee9-8314-0528514edcf4",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.207Z",
+      "date_done": "2021-04-17T18:22:58.207Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 6,
+    "fields": {
+      "task_id": "91582bba-ce8a-43f7-a1ec-01e7d8f1c446",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.219Z",
+      "date_done": "2021-04-17T18:22:58.219Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 7,
+    "fields": {
+      "task_id": "94af5fa3-eec9-4b5d-a276-cb4288910b72",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.232Z",
+      "date_done": "2021-04-17T18:22:58.233Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 8,
+    "fields": {
+      "task_id": "af939977-53fe-4f31-9277-4e8e561b02a7",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.242Z",
+      "date_done": "2021-04-17T18:22:58.242Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 9,
+    "fields": {
+      "task_id": "671efb1e-ec27-4184-ae14-f3a473e0e615",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.251Z",
+      "date_done": "2021-04-17T18:22:58.251Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 10,
+    "fields": {
+      "task_id": "f52acaad-f420-406d-a7b3-9c21186b71b8",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.269Z",
+      "date_done": "2021-04-17T18:22:58.269Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 11,
+    "fields": {
+      "task_id": "db040fe2-f45d-4cfd-93c1-44763df61d5f",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.282Z",
+      "date_done": "2021-04-17T18:22:58.283Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 12,
+    "fields": {
+      "task_id": "5b9ade02-d26d-42a7-a61c-5d027539bdff",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.293Z",
+      "date_done": "2021-04-17T18:22:58.293Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 13,
+    "fields": {
+      "task_id": "890215ea-afe3-43ac-aedf-8212f2825665",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.302Z",
+      "date_done": "2021-04-17T18:22:58.302Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 14,
+    "fields": {
+      "task_id": "861fcba4-71c6-4a33-b883-91347e13706f",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.309Z",
+      "date_done": "2021-04-17T18:22:58.309Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 15,
+    "fields": {
+      "task_id": "19eb7f74-837d-4247-bc36-dc193f1d8963",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.317Z",
+      "date_done": "2021-04-17T18:22:58.317Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 16,
+    "fields": {
+      "task_id": "98ae1e58-f51b-4521-afec-7551df967e31",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.325Z",
+      "date_done": "2021-04-17T18:22:58.325Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 17,
+    "fields": {
+      "task_id": "65dcee35-2e42-4c8f-bf12-c5a1278483b4",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.337Z",
+      "date_done": "2021-04-17T18:22:58.337Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  },
+  {
+    "model": "django_celery_results.taskresult",
+    "pk": 18,
+    "fields": {
+      "task_id": "dffc063f-7175-445e-b97b-7d6d0380efd8",
+      "task_name": null,
+      "task_args": null,
+      "task_kwargs": null,
+      "status": "FAILURE",
+      "worker": null,
+      "content_type": "application/json",
+      "content_encoding": "utf-8",
+      "result": "{\"exc_type\": \"NotRegistered\", \"exc_message\": [\"test_schedule\"], \"exc_module\": \"celery.exceptions\"}",
+      "date_created": "2021-04-17T18:22:58.353Z",
+      "date_done": "2021-04-17T18:22:58.353Z",
+      "traceback": null,
+      "meta": "{\"children\": []}"
+    }
+  }
+]
