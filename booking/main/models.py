@@ -94,6 +94,12 @@ class Room(models.Model):
     """
     A model room for accommodation facility.
     """
+    STATUS_CHOICES = [
+        ('d', 'Draft'),
+        ('p', 'Published'),
+        ('a', 'Arhived'),
+    ]
+
     hotel = models.ForeignKey(
         AccommodationFacility,
         on_delete=models.CASCADE,
@@ -129,6 +135,7 @@ class Room(models.Model):
         null=True
     )
     created = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES, verbose_name="Статус", default="Draft")
 
     def __str__(self) -> str:
         return "{} - номер {}".format(self.hotel.title, self.number)
