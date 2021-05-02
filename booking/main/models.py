@@ -56,7 +56,7 @@ class AccommodationFacility(models.Model):
         ("13", "Хостел"),
     ]
     title = models.CharField("Название", max_length=100)
-    num_starts = models.CharField(
+    num_stars = models.CharField(
         "Рейтинг размещения",
         max_length=1,
         choices=RATING_STARS
