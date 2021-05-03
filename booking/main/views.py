@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
 from django.core.cache import cache
 
-from .models import Room, Tag
+from .models import Room
 from .forms import RoomForm, ProfileFormset, UserForm
 
 

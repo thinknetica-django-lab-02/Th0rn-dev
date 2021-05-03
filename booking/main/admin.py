@@ -7,7 +7,7 @@ from django.utils.html import format_html
 from ckeditor.widgets import CKEditorWidget
 
 from .models import (Room, AccommodationFacility, AccommodationManager,
-                     Tag, Profile, Subscriber, SMSLog)
+                    Profile, Subscriber, SMSLog)
 
 
 def make_published(self, request, queryset):
@@ -61,11 +61,6 @@ class AdminAccommodationManager(admin.ModelAdmin):
     fields = (("last_name", "first_name", "middle_name"), "profile")
     list_display = ("__str__", "profile")
     inlines = [AccommodationFacilityInline]
-
-
-@admin.register(Tag)
-class AdminTag(admin.ModelAdmin):
-    pass
 
 
 @admin.register(Profile)
