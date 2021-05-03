@@ -117,7 +117,6 @@ class Room(models.Model):
         max_digits=3,
         decimal_places=1
     )
-    image = ImageField(upload_to='images/', blank=True)
     tags = ArrayField(models.CharField(max_length=30, blank=True), blank=True)
     rental = models.DecimalField(
         verbose_name="Аренда за сутки",

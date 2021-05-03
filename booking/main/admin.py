@@ -45,7 +45,7 @@ class AdminRoom(admin.ModelAdmin):
     list_filter = ('tags', 'created')
 
     def tags_list(self, obj):
-        return format_html("<br />".join([tag.tag_name for tag in obj.tags.all()]))
+        return format_html("<br />".join([tag for tag in obj.tags]))
 
     tags_list.empty_value_display = "-"
     tags_list.short_description = "Теги"
