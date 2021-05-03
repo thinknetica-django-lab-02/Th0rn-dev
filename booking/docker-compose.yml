@@ -1,10 +1,47 @@
-version: "3.3"
+version: "3.7"
 
 services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+      - redis
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=booking_adm
+      - POSTGRES_PASSWORD=booking
+      - POSTGRES_DB=booking_dev
+
   redis:
-    image: "bitnami/redis"
-    command: redis-server --requirepass RPASSWORD
+    image: redis:5.0.7-alpine
     ports:
       - "6379:6379"
+  celery:
+    restart: always
+    build:
+      context: .
+    command: celery -A main worker -l info
+    volumes:
+      - .:/usr/src/app
     environment:
-      - REDIS_REPLICATION_MODE=master
+      - DB_HOST=db
+      - DB_NAME=booking_dev
+      - DB_USER=booking_adm
+      - DB_PASS=booking
+    depends_on:
+      - db
+      - redis
+      - web
+
+volumes:
+  postgres_data:
