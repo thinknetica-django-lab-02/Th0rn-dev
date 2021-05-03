@@ -20,7 +20,8 @@ from django.urls import path, include
 from django.contrib.flatpages.views import flatpage
 
 from main.views import (index, RoomsListView, RoomDetailView,
-                        RoomCreateView, RoomEditView, ProfileView)
+                        RoomCreateView, RoomEditView, ProfileView,
+                        SearchView)
 
 urlpatterns = [
     path('', index, name='index'),
@@ -32,5 +33,6 @@ urlpatterns = [
     path('accounts/profile/', ProfileView.as_view(), name='profile'),
     path('about-us/', flatpage, {'url': '/about-us/'}, name='about'),
     path('contact/', flatpage, {'url': '/contact/'}, name='contact'),
+    path('search/', SearchView.as_view(), name='search'),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

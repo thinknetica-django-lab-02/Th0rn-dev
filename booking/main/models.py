@@ -91,6 +91,11 @@ class Room(models.Model):
         ('a', 'Arhived'),
     ]
 
+    title = models.CharField(
+        max_length=100,
+        verbose_name='Заголовок'
+    )
+
     hotel = models.ForeignKey(
         AccommodationFacility,
         on_delete=models.CASCADE,
@@ -131,7 +136,7 @@ class Room(models.Model):
         return "{} - номер {}".format(self.hotel.title, self.number)
 
     def get_absolute_url(self) -> str:
-        return reverse('room-detail', kwargs={'id': self.id})
+        return reverse('room-detail', kwargs={'pk': self.pk})
 
 
 class Profile(models.Model):

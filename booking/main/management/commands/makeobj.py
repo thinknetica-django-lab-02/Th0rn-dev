@@ -36,7 +36,7 @@ class Command(BaseCommand):
         for name in options["hotel_names"]:
             hotel = AccommodationFacility.objects.create(
                 title=name,
-                num_starts=5,
+                num_stars=5,
                 accommodation_type=6,
                 address="Заполнить адрес",
                 email="info@{}.com".format(name.lower()),

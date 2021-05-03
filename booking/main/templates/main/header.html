@@ -18,8 +18,8 @@
                     <li class="nav-item"><a class="nav-link" href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 </ul>
-                <form class="form-inline form-navbar my-2 my-lg-0 order-1">
-                    <input class="form-control" name="s" type="text" placeholder="Найти">
+                <form class="form-inline form-navbar my-2 my-lg-0 order-1" method="get" action="{% url 'search' %}">
+                    <input class="form-control" id="search" name="q" type="text" placeholder="Найти">
                 </form>
                 <ul class="navbar-nav d-none d-lg-flex ml-2 order-2">
                     {% if user.is_authenticated %}
