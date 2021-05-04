@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.shortcuts import reverse
 from sorl.thumbnail import ImageField
+from django.contrib.postgres.fields import ArrayField
 
 from .validators import validate_age
 
@@ -80,16 +81,6 @@ class AccommodationFacility(models.Model):
         return self.title
 
 
-class Tag(models.Model):
-    """
-    A model tag for grouping room by some parametrs
-    """
-    tag_name = models.CharField(max_length=30, unique=True)
-
-    def __str__(self) -> str:
-        return self.tag_name
-
-
 class Room(models.Model):
     """
     A model room for accommodation facility.
@@ -126,8 +117,7 @@ class Room(models.Model):
         max_digits=3,
         decimal_places=1
     )
-    image = ImageField(upload_to='images/', blank=True)
-    tags = models.ManyToManyField(Tag, verbose_name="Теги", blank=True)
+    tags = ArrayField(models.CharField(max_length=30, blank=True), blank=True)
     rental = models.DecimalField(
         verbose_name="Аренда за сутки",
         max_digits=5,

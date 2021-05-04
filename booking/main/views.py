@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
 from django.core.cache import cache
 
-from .models import Room, Tag
+from .models import Room
 from .forms import RoomForm, ProfileFormset, UserForm
 
 
@@ -29,7 +29,12 @@ class RoomsListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(RoomsListView, self).get_context_data(**kwargs)
-        context["tags_list"] = Tag.objects.all()
+        rooms = Room.objects.all()
+        tags = set()
+        for room in rooms:
+            for tag in room.tags:
+                tags.add(tag)
+        context["tags_list"] = list(tags)
         tag = self.request.GET.get("tag")
         if tag:
             context["tag_url"] = "tag={}&".format(tag)
@@ -39,7 +44,7 @@ class RoomsListView(ListView):
         queryset = super(RoomsListView, self).get_queryset()
         tag = self.request.GET.get("tag")
         if tag is not None:
-            return queryset.filter(tags__tag_name=tag).order_by("id")
+            return queryset.filter(tags__contains=[tag]).order_by("id")
         return queryset
 
 
