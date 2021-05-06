@@ -7,6 +7,7 @@ from django.contrib.auth.mixins import (LoginRequiredMixin,
 from django.contrib.auth.models import User
 from django.http.response import HttpResponseRedirect
 from django.core.cache import cache
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 
 from .models import Room
 from .forms import RoomForm, ProfileFormset, UserForm
@@ -133,3 +134,19 @@ class ProfileView(LoginRequiredMixin, UpdateView):
             return self.form_valid_formset(form, profile_form)
         else:
             return self.form_invalid(form)
+
+
+class SearchView(ListView):
+    """Page search result"""
+    template_name = "main/search.html"
+
+    def get(self, request, *args, **kwargs):
+        context = {}
+        question = request.GET.get("q")
+        if question:
+            vector = SearchVector('title', weight='A') + SearchVector('description', weight='B')
+            query = SearchQuery('test')
+            answers_list = Room.objects.annotate(rank=SearchRank(vector, query)).order_by('-rank')
+            context['answers_list'] = answers_list
+        return render(request, template_name='main/search.html', context=context)
+

@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% load cache %}
+{% block title %} Страница поиска {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-9">
+        <h3>Поиск</h3>
+        {% if answers_list %}
+        <div class="list-group">
+            {% for item in answers_list %}
+            <a href="{{ item.get_absolute_url }}" class="list-group-item list-group-item-action">
+                <p class="mb-1">{{ item }}.</p>
+                <small class="text-muted">{{ item.description }}</small>
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+            <p>По вашему запросу ничего не найдено</p>
+        {% endif %}
+    </div>
+    <div class="col-3">
+        {% cache 500 object_list %}
+        <h3>Tags</h3>
+        {% for tag in tags_list %}
+        <a href="{% url 'rooms-list' %}?tag={{ tag }}" class="badge badge-secondary">{{ tag }}</a>
+        {% endfor %}
+        {% endcache %}
+    </div>
+</div>
+{% endblock %}
