@@ -76,6 +76,7 @@ class AccommodationFacility(models.Model):
         on_delete=models.CASCADE,
         verbose_name="Управляющий"
     )
+    meta = models.TextField("Мета тег (SEO)", blank=True)
 
     def __str__(self) -> str:
         return self.title
@@ -131,6 +132,7 @@ class Room(models.Model):
     )
     created = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, verbose_name="Статус", default="Draft")
+    meta = models.TextField("Мета тег (SEO)", blank=True)
 
     def __str__(self) -> str:
         return "{} - номер {}".format(self.hotel.title, self.number)

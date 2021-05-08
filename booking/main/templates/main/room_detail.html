@@ -1,10 +1,11 @@
 {% extends "main/base.html" %}
 {% load sorl_thumbnail %}
 {% load cache %}
-{% block title %} Номер - {{ room.number }} {% endblock %}
+{% block title %}{{ room.title }} ({{ room.number }}), отель -  {{ room.hotel }} {% endblock %}
+{% block meta %}{{room.meta}}{% endblock %}
 
 {% block content %}
-<h1>Номер - {{ room.number }}</h1>
+<h3>{{ room.title }}, {{ room.hotel }}</h3>
 <ul>
     <li>Отель - {{ room.hotel }}</li>
     <li>Описание - {{ room.description }}</li>
