@@ -3,6 +3,27 @@
 {% get_flatpages as flatpages %}
 
 {% block title %}{{ flatpage.title }}{% endblock %}
+{% block meta %}{{ flatpage.title }} - booking}{% endblock %}
+{% block microdata %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Project booking",
+        "alternateName": "booking",
+        "url": "http://booking.site",
+        "logo": "",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "11111111",
+            "contactType": "technical support",
+            "areaServed": "RU",
+            "availableLanguage": "Russian"
+        },
+        "sameAs": "https://facebook.com/booking"
+    }
+</script>
+{% endblock %}
 {% block content %}
     {{ flatpage.content }}
 {% endblock %}

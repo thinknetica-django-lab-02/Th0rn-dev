@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block meta %}{% endblock %}">
     <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <style>
@@ -22,6 +23,7 @@
             padding-left: 15px;
         }
     </style>
+    {%  block microdata %}{% endblock %}
 </head>
 <body class="d-flex flex-column h-100">
     {% include "main/header.html" with user=request.user %}

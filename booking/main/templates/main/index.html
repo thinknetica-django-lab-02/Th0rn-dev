@@ -1,7 +1,25 @@
 {% extends "main/base.html" %}
 {% load current_server_time %}
 {% load own_filter %}
-{% block title %} Главная страница {% endblock %}
+{% block title %} Сайт booking - "Online бронирование номеров отелей". Главная страница{% endblock %}
+{% block meta %}Онлайн система бронирование номеров отеля{% endblock %}
+{% block microdata %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "booking",
+        "url": "http://booking.site",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://booking.site/search{search_term_string}q=",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+
+</script>
+{% endblock %}
 {% block content %}
     <h1>Главная</h1>
     <p>Имя текущего пользователя - {{ user.first_name }}</p>
